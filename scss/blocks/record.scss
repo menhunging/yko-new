@@ -2,7 +2,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  background-color: #f8f9fb;
+  // background-color: #f8f9fb;
   position: relative;
   z-index: 3;
 
@@ -50,6 +50,7 @@
     border-radius: 60px;
     position: relative;
     z-index: 2;
+     box-shadow: 0px 6px 15px 0px rgba(98, 97, 97, 0.25);
 
     @include responsive1199 {
       flex-direction: column;
