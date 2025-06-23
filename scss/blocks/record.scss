@@ -1,0 +1,186 @@
+.records {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #f8f9fb;
+  position: relative;
+  z-index: 3;
+
+  .records__media {
+    width: 100%;
+    height: 719px;
+    position: relative;
+    border-radius: 60px;
+    overflow: hidden;
+    margin-bottom: -60px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    @include responsive1549 {
+      height: 500px;
+    }
+
+    @include responsive767 {
+      height: auto;
+      padding-top: calc(230 / 355 * 100%);
+    }
+
+    .picture-block {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .picture-block {
+  }
+
+  .records__row {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    gap: 63px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $colorWhite;
+    padding: 80px 65px;
+    border-radius: 60px;
+    position: relative;
+    z-index: 2;
+
+    @include responsive1199 {
+      flex-direction: column;
+      gap: 40px 0;
+      font-size: 14px;
+      line-height: 20px;
+      min-height: 200px;
+      padding: 70px 35px;
+    }
+
+    @include responsive767 {
+      padding: 20px 18px;
+      border-radius: 35px;
+    }
+
+    @include after {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='28' height='26' viewBox='0 0 28 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.22085 23.2847C4.26652 22.6682 4.42257 21.9679 4.53675 21.2676C4.76891 19.8327 5.00868 18.4017 5.25607 16.9669C5.28651 16.7842 5.18756 16.7119 5.09241 16.6205C3.68422 15.2618 2.28363 13.8993 0.871629 12.5444C-0.639328 11.0943 -0.106497 8.66612 1.85737 8.08381C2.3293 7.94299 2.82407 7.91254 3.30743 7.83642C4.94398 7.58523 6.58434 7.34165 8.2247 7.10568C8.39977 7.07904 8.44925 6.96867 8.51014 6.84307C9.3817 5.05428 10.2456 3.26169 11.1286 1.48051C11.6044 0.513801 12.4112 0 13.4845 0C14.573 0 15.3646 0.536637 15.8518 1.51096C16.6891 3.18176 17.5378 4.84876 18.3447 6.53479C18.535 6.93442 18.7786 7.06382 19.1934 7.1171C21.104 7.36829 23.0108 7.6309 24.9099 7.93538C25.9299 8.09903 26.6112 8.73462 26.9157 9.72036C27.2201 10.7061 26.9956 11.6043 26.2686 12.3312C24.8566 13.7508 23.4218 15.1476 21.9908 16.5482C21.8614 16.6738 21.8081 16.7804 21.8423 16.9783C22.1963 18.9269 22.5388 20.8756 22.8737 22.828C23.0564 23.8899 22.7329 24.7843 21.8652 25.4237C20.9974 26.0669 20.0497 26.1278 19.0906 25.6368C17.3285 24.7348 15.574 23.8175 13.8194 22.8927C13.6329 22.7938 13.4959 22.7938 13.3094 22.8927C11.6234 23.8023 9.92214 24.6815 8.23992 25.6063C6.95732 26.3104 5.74703 25.9907 5.00488 25.2714C4.48346 24.7538 4.21705 24.122 4.22085 23.2847Z' fill='black'/%3e%3c/svg%3e ");
+      width: 89px;
+      height: 89px;
+      border-radius: 50%;
+      background-position: center 20px;
+      background-repeat: no-repeat;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $colorWhite;
+
+      @include responsive767 {
+        width: 48px;
+        height: 48px;
+        background-position: center 10px;
+        background-size: 20px;
+        top: -20px;
+      }
+    }
+
+    @include before {
+      background-image: url("../img/cloud2.png");
+      background-image: image-set(
+        url("../img/cloud2.webp") type("image/webp"),
+        url("../img/cloud2.png") type("image/png")
+      );
+      width: 1920px;
+      height: 523px;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: -190px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: cover;
+      pointer-events: none;
+      z-index: -1;
+    }
+  }
+
+  .records__col {
+    width: calc(50% - 90px);
+    position: relative;
+    padding-right: 200px;
+
+    @include responsive1549 {
+      width: calc(50% - 45px);
+    }
+
+    @include responsive1199 {
+      width: 100%;
+      min-height: 110px;
+    }
+
+    @include responsive767 {
+      padding-right: 0;
+    }
+
+    &:last-child {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .picture-block {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 200px;
+      height: 100px;
+
+      @include responsive1199 {
+        width: 160px;
+        height: 90px;
+      }
+
+      @include responsive767 {
+        width: 90px;
+        height: 45px;
+        top: -5px;
+      }
+
+      @include responsive389 {
+        height: 65px;
+      }
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .records__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 13px;
+    display: block;
+
+    @include responsive767 {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 20px;
+      padding-right: 100px;
+    }
+
+    @include responsive389 {
+      margin-bottom: 10px;
+      padding-right: 80px;
+    }
+  }
+
+  p {
+    color: #898989;
+
+    & + p {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.btn {
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  position: relative;
+  color: $colorBlack;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 15px 15px;
+  border-radius: 60px;
+  font-variant-ligatures: none;
+  font-family: $fontMain;
+  width: 100%;
+  min-height: 50px;
+
+  @include responsive1023 {
+    font-size: 16px;
+  }
+
+  @include responsive767 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &--black {
+    background-color: $colorBlack;
+    color: $colorWhite;
+    text-transform: uppercase;
+
+    @include hover {
+      background-color: $colorYellow;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

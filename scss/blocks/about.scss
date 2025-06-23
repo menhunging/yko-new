@@ -1,0 +1,145 @@
+.about {
+  position: relative;
+  z-index: 3;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='1920' height='601' viewBox='0 0 1920 601' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.43'%3e%3cpath d='M0 256.044L960 1L1920 256.044' stroke='%238B8B8B'/%3e%3cpath d='M0 424.649L960 169.605L1920 424.649' stroke='%238B8B8B'/%3e%3cpath d='M0 600L960 344.956L1920 600' stroke='%238B8B8B'/%3e%3c/g%3e%3c/svg%3e ");
+  background-position: calc(50% - 7px) 190px;
+  background-repeat: no-repeat;
+  margin-bottom: -200px;
+
+  @include responsive1549 {
+    background-position: center 140px;
+    margin-bottom: -70px;
+  }
+
+  @include responsive1199 {
+    margin-bottom: 0;
+  }
+
+  @include before {
+    background-image: url("../img/cloud.png");
+    background-image: image-set(
+      url("../img/cloud.webp") type("image/webp"),
+      url("../img/cloud.png") type("image/png")
+    );
+    width: 100%;
+    height: 523px;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: -281px;
+    left: 0;
+    background-size: cover;
+    pointer-events: none;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    min-height: 685px;
+
+    @include responsive1549 {
+      min-height: 390px;
+    }
+
+    @include responsive1199 {
+      min-height: 280px;
+    }
+
+    @include responsive767 {
+      overflow: auto;
+      left: -10px;
+      width: calc(100% + 20px);
+      position: relative;
+      padding: 0 10px;
+    }
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    font-size: 25px;
+    line-height: 35px;
+
+    @include responsive1199 {
+      gap: 0;
+      margin-top: 50px;
+    }
+
+    @include responsive767 {
+      min-width: 180px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &:nth-child(1) {
+      width: 210px;
+    }
+
+    &:nth-child(2) {
+      width: 192px;
+      min-width: 192px;
+      text-align: center;
+      transform: translate(90px, -50px);
+      margin-top: 0;
+
+      @include responsive1549 {
+        transform: translate(20px, -10px);
+      }
+
+      @include responsive1199 {
+        transform: translate(-20px, 0px);
+      }
+
+      @include responsive767 {
+        margin: 0 15px;
+      }
+
+      .num {
+        font-weight: 400;
+        font-size: 232px;
+        line-height: 232px;
+        text-transform: uppercase;
+
+        @include responsive1199 {
+          font-size: 150px;
+          line-height: 180px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      width: 400px;
+
+      @include responsive1549 {
+        width: 250px;
+      }
+
+      @include responsive1199 {
+        width: 200px;
+      }
+    }
+  }
+
+  .num {
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    @include responsive1549 {
+      font-size: 80px;
+    }
+
+    @include responsive1199 {
+      font-size: 60px;
+    }
+  }
+
+  p {
+    min-height: 105px;
+  }
+}

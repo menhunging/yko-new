@@ -1,0 +1,178 @@
+.reviews {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f9fb;
+  z-index: 2;
+
+  @include before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='338' height='413' viewBox='0 0 338 413' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.43'%3e%3cpath d='M-48 112.14L144.5 1L337 112.14' stroke='%238B8B8B'/%3e%3cpath d='M-48 185.613L144.5 74.4733L337 185.613' stroke='%238B8B8B'/%3e%3cpath d='M-48 262.025L144.5 150.885L337 262.025' stroke='%238B8B8B'/%3e%3cpath d='M-48 335.499L144.5 224.359L337 335.499' stroke='%238B8B8B'/%3e%3cpath d='M-48 411.911L144.5 300.771L337 411.911' stroke='%238B8B8B'/%3e%3c/g%3e%3c/svg%3e ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 410px;
+    top: 200px;
+    left: -120px;
+    z-index: -1;
+  }
+
+  @include after {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='338' height='413' viewBox='0 0 338 413' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.43'%3e%3cpath d='M-48 112.14L144.5 1L337 112.14' stroke='%238B8B8B'/%3e%3cpath d='M-48 185.613L144.5 74.4733L337 185.613' stroke='%238B8B8B'/%3e%3cpath d='M-48 262.025L144.5 150.885L337 262.025' stroke='%238B8B8B'/%3e%3cpath d='M-48 335.499L144.5 224.359L337 335.499' stroke='%238B8B8B'/%3e%3cpath d='M-48 411.911L144.5 300.771L337 411.911' stroke='%238B8B8B'/%3e%3c/g%3e%3c/svg%3e ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 410px;
+    right: -50px;
+    bottom: -10px;
+    z-index: -1;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .section-title {
+  }
+
+  .caption {
+  }
+
+  .reviews-slider {
+    width: 688px;
+    height: 541px;
+    margin: 0;
+    margin-top: 50px;
+    overflow: visible;
+    position: static;
+
+    @include responsive767 {
+      width: 335px;
+      height: 330px;
+      margin-top: 30px;
+    }
+
+    @include responsive389 {
+      width: 280px;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      height: 541px;
+      position: relative;
+      transition: all 0.3s;
+
+      @include responsive767 {
+        height: 330px;
+      }
+
+      .play {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: all 0.3s;
+        opacity: 0;
+        pointer-events: none;
+
+        @include hover {
+          transform: scale(1.1);
+        }
+
+        @include after {
+          width: 70px;
+          height: 70px;
+          border: solid 1px $colorWhite;
+          border-radius: 50%;
+          backdrop-filter: blur(4px);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.243 5.86535C13.5823 6.63398 13.5823 8.56602 12.243 9.33465L3.77407 14.1948C2.44074 14.96 0.778587 13.9974 0.778587 12.4601L0.778587 2.73986C0.778587 1.20257 2.44074 0.240037 3.77407 1.00521L12.243 5.86535Z' fill='white'/%3e%3c/svg%3e ");
+        }
+      }
+
+      &.swiper-slide-prev {
+        opacity: 0;
+      }
+
+      &.swiper-slide-active {
+        .picture-block {
+          width: 100%;
+        }
+
+        .play {
+          opacity: 1;
+          pointer-events: initial;
+        }
+      }
+
+      &.swiper-slide-next {
+        & + .swiper-slide {
+          .picture-block {
+            transform: translateX(-328px);
+
+            @include responsive767 {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+
+    .picture-block {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      width: 358px;
+      transition: all 0.3s;
+
+      @include responsive389 {
+        width: 280px;
+      }
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 60px;
+        overflow: hidden;
+
+        @include responsive767 {
+          border-radius: 30px;
+        }
+      }
+    }
+
+    .swiper-controls {
+      position: absolute;
+      top: 40px;
+      right: 0;
+
+      @include responsive1549 {
+        top: 20px;
+        right: 20px;
+      }
+
+      @include responsive1199 {
+        top: 0;
+        right: 20px;
+      }
+
+      @include responsive389 {
+        top: -5px;
+      }
+
+      .swiperBtnPrev {
+        background-color: $colorBlack;
+      }
+      .swiperBtnNext {
+        background-color: $colorBlack;
+      }
+    }
+  }
+}

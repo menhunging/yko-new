@@ -1,0 +1,28 @@
+.map-section {
+  padding-bottom: 0;
+  margin-bottom: -50px;
+
+  .container {
+  }
+}
+
+#map {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 772px;
+
+  @include responsive1549 {
+    height: 500px;
+  }
+
+  @include responsive767 {
+    height: 430px;
+  }
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,289 @@
+.footer {
+  background-color: $colorWhite;
+  box-shadow: 0px -10px 2px 0px #0000000d;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  position: relative;
+  z-index: 5;
+  padding-top: 55px;
+  padding-bottom: 42px;
+
+  @include responsive1549 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @include responsive1199 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include responsive1199 {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:nth-child(1) {
+      width: 155px;
+      min-width: 155px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #898989;
+      gap: 22px;
+    }
+
+    &:nth-child(2) {
+      width: calc(100% - 155px - 360px);
+      padding: 45px 20px 45px 50px;
+
+      @include responsive1549 {
+        width: calc(100% - 155px - 280px);
+        padding: 45px 20px 45px 20px;
+      }
+
+      @include responsive1199 {
+        order: 2;
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 360px;
+      min-width: 360px;
+      align-items: flex-end;
+      gap: 93px;
+      padding-top: 20px;
+
+      @include responsive1549 {
+        width: 280px;
+        min-width: 280px;
+      }
+
+      @include responsive1199 {
+        gap: 14px;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .logo {
+      padding: 0;
+      width: 95px;
+      height: 95px;
+
+      @include responsive1549 {
+        width: 95px;
+        height: 95px;
+        min-width: 95px;
+      }
+
+      @include responsive767 {
+        width: 75px;
+        height: 75px;
+        min-width: 75px;
+      }
+    }
+  }
+
+  .footer-top__menu {
+    width: 100%;
+
+    .menu__list {
+      @include responsive1199 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        justify-content: center;
+      }
+    }
+    .menu__item {
+    }
+    .menu__link {
+    }
+  }
+
+  .link-chat {
+    @include responsive1199 {
+      display: block;
+      width: 210px;
+      min-width: 210px;
+      padding: 4px 6px;
+      background-color: $colorBlack;
+      height: auto;
+    }
+
+    .link-chat__text {
+      @include responsive1199 {
+        display: block;
+      }
+    }
+  }
+
+  .phone-link {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 46px;
+    @include text-decoration-hover($colorBlack);
+
+    @include responsive1549 {
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    @include responsive767 {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  .phone-mail {
+    position: absolute;
+    bottom: 10px;
+    left: calc(-100% + 20px);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    @include text-decoration-hover($colorBlack);
+
+    @include responsive1199 {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      order: -1;
+    }
+  }
+
+  .footer-info {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: -28px;
+
+    @include responsive1549 {
+      width: 45%;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include responsive1199 {
+      margin: 0;
+      width: 100%;
+      order: 4;
+    }
+
+    @include responsive767 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 20px;
+    }
+
+    p {
+      max-width: 265px;
+
+      @include responsive767 {
+        max-width: 170px;
+      }
+
+      & + p {
+        @include responsive479 {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    color: #8e8e8e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 44px;
+
+    @include responsive1549 {
+      margin-top: 30px;
+    }
+
+    @include responsive1199 {
+      order: 5;
+    }
+
+    @include responsive767 {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    a:not(.develop__link) {
+      @include text-decoration-hover(#8e8e8e);
+    }
+  }
+}
+
+.develop {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  color: #8e8e8e;
+}
+
+.develop__link {
+  text-decoration: underline;
+  transition: text-decoration 0.3s;
+
+  @include hover {
+    text-decoration-color: transparent;
+  }
+}
+
+.footer-data {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #8e8e8e;
+  margin-top: 10px;
+
+  @include responsive1199 {
+    order: 3;
+    text-align: center;
+    display: block;
+    margin: 0;
+  }
+
+  span {
+    @include responsive1199 {
+      display: inline-block;
+      margin: 5px;
+    }
+
+    @include responsive767 {
+      margin: 2px;
+    }
+  }
+}

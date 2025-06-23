@@ -1,0 +1,142 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.caption {
+  font-family: $fontMain;
+  font-weight: 600;
+}
+
+h1,
+.caption--h1 {
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include responsive1549 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  @include responsive1199 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  @include responsive1023 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  @include responsive767 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+h2,
+.caption--h2 {
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 400;
+
+  @include responsive1549 {
+    font-size: 55px;
+    line-height: 70px;
+  }
+
+  @include responsive1199 {
+    font-size: 59px;
+    line-height: 70px;
+  }
+
+  @include responsive1023 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @include responsive1023 {
+  }
+
+  @include responsive767 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  @include responsive389 {
+    font-size: 26px;
+    line-height: 33px;
+  }
+}
+
+h3,
+.caption--h3 {
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 60px;
+
+  @include responsive1549 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  @include responsive767 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  @include responsive389 {
+    font-size: 24px;
+  }
+}
+
+h4,
+.caption--h4 {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 400;
+
+  @include responsive767 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include responsive389 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.caption--small {
+  font-family: $fontCyrge;
+  font-weight: 400;
+  font-size: 83px;
+  line-height: 53px;
+
+  @include responsive1549 {
+    font-size: 66px;
+  }
+
+  @include responsive1199 {
+    font-size: 59px;
+    line-height: 40px;
+  }
+
+  @include responsive1023 {
+    font-size: 44px;
+    line-height: 30px;
+  }
+
+  @include responsive767 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  @include responsive389 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

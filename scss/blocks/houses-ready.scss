@@ -1,0 +1,335 @@
+.houses-ready {
+  position: relative;
+
+  .section-title {
+    .shift {
+      @include responsive1199 {
+        margin-left: 0;
+        width: auto;
+      }
+
+      @include responsive767 {
+        text-align: left;
+      }
+    }
+  }
+
+  @include after {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='338' height='413' viewBox='0 0 338 413' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.43'%3e%3cpath d='M-48 112.14L144.5 1L337 112.14' stroke='%238B8B8B'/%3e%3cpath d='M-48 185.613L144.5 74.4733L337 185.613' stroke='%238B8B8B'/%3e%3cpath d='M-48 262.025L144.5 150.885L337 262.025' stroke='%238B8B8B'/%3e%3cpath d='M-48 335.499L144.5 224.359L337 335.499' stroke='%238B8B8B'/%3e%3cpath d='M-48 411.911L144.5 300.771L337 411.911' stroke='%238B8B8B'/%3e%3c/g%3e%3c/svg%3e ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 410px;
+    bottom: 20px;
+    left: -40px;
+  }
+
+  .houses-slider__info {
+    width: calc(100% - 701px);
+
+    @include responsive1549 {
+      width: calc(100% - 460px);
+    }
+
+    @include responsive1199 {
+      width: 100%;
+    }
+
+    .caption {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 33px;
+
+      @include responsive1199 {
+        padding-left: 0;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 44px;
+        height: auto;
+        width: 44px;
+
+        @include responsive639 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .houses-slider__data {
+    display: flex;
+    gap: 60px;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 35px;
+    margin-top: 32px;
+    padding-left: 33px;
+
+    @include responsive1549 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-top: 10px;
+      gap: 50px;
+    }
+
+    @include responsive1199 {
+      padding-left: 0;
+    }
+
+    @include responsive639 {
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    @include responsive479 {
+      gap: 35px;
+    }
+
+    @include responsive389 {
+      gap: 30px;
+    }
+
+    li {
+      @include responsive479 {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .title {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #8e8e8e;
+      display: block;
+
+      @include responsive1549 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      @include responsive639 {
+        font-size: 12px;
+        line-height: 12px;
+        margin-top: auto;
+      }
+    }
+  }
+
+  .houses-slider__content {
+    background-color: $colorWhite;
+    padding: 30px 33px;
+    border-radius: 35px;
+    margin-top: 45px;
+
+    @include responsive1549 {
+      margin-top: 20px;
+      padding: 30px 20px;
+    }
+
+    @include responsive479 {
+      padding: 20px 15px;
+    }
+  }
+
+  .houses-slider__adv {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+
+    @include responsive1549 {
+      gap: 20px;
+    }
+
+    @include responsive639 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive479 {
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 11px;
+      line-height: 14px;
+      gap: 5px;
+    }
+
+    @include responsive389 {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .icon {
+      margin: 0 auto;
+
+      @include responsive479 {
+        width: 25px;
+        height: 20px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .houses-slider__advtext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 21px 34px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 35px;
+
+    @include responsive1549 {
+      font-size: 14px;
+      line-height: 18px;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    @include responsive1199 {
+      margin-top: 40px;
+    }
+
+    @include responsive767 {
+      margin-top: 30px;
+    }
+
+    @include responsive639 {
+      grid-template-columns: 1fr;
+      font-size: 12px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 20px;
+
+      @include responsive639 {
+        margin: 0 auto;
+      }
+
+      @include responsive479 {
+        margin: 0;
+      }
+
+      @include before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 5L6 1L10.5 5' stroke='%23F59E11'/%3e%3cpath d='M1 9L6 5L10.5 9' stroke='%23F59E11'/%3e%3c/svg%3e ");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 8px;
+        background-size: cover;
+        top: 5px;
+        left: 0;
+      }
+    }
+  }
+
+  .btn {
+    max-width: 270px;
+    margin-top: 35px;
+
+    @include responsive639 {
+      margin: 20px auto 0;
+      display: table;
+    }
+  }
+}
+
+.houses-slider {
+  width: 100%;
+  margin-top: 45px;
+  overflow: visible;
+
+  @include responsive1199 {
+    margin-top: 30px;
+  }
+
+  .swiper-slide {
+    background-color: #f8f9fb;
+    padding: 25px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    padding-right: 55px;
+
+    @include responsive1549 {
+      gap: 25px;
+      padding: 25px;
+    }
+
+    @include responsive1199 {
+      flex-direction: column;
+    }
+
+    @include responsive767 {
+      padding: 15px;
+    }
+  }
+
+  .picture-block {
+    width: 701px;
+    height: 544px;
+    border-radius: 35px;
+    overflow: hidden;
+
+    .picture-block__logo {
+      display: none;
+
+      @include responsive639 {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 33px;
+        height: 33px;
+        background-color: $colorWhite;
+        padding: 2px;
+        border-radius: 10px;
+      }
+    }
+
+    @include responsive1549 {
+      width: 450px;
+      height: 320px;
+    }
+
+    @include responsive1199 {
+      width: 100%;
+      height: auto;
+      padding-top: calc(184 / 329 * 100%);
+    }
+  }
+
+  .swiper-controls {
+    position: absolute;
+    top: -108px;
+    right: 0;
+
+    @include responsive767 {
+      top: -70px;
+    }
+
+    .swiperBtnPrev {
+      background-color: $colorBlack;
+    }
+    .swiperBtnNext {
+      background-color: $colorBlack;
+    }
+  }
+}

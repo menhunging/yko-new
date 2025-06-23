@@ -1,0 +1,27 @@
+@import "./shared/values";
+@import "./shared/mixins";
+@import "./shared/reset";
+
+@import "base";
+
+// components
+@import "./components/btns";
+@import "./components/captions";
+@import "./components/modals";
+@import "./components/header";
+@import "./components/footer";
+
+@import "blocks/grettings-main.scss";
+@import "blocks/our-villages.scss";
+@import "blocks/finishing.scss";
+@import "blocks/houses-ready.scss";
+@import "blocks/mortgage.scss";
+@import "blocks/technologies.scss";
+@import "blocks/about.scss";
+@import "blocks/record.scss";
+@import "blocks/houses.scss";
+@import "blocks/reviews.scss";
+@import "blocks/map.scss";
+
+// BLOCKS
+@import "blocks";

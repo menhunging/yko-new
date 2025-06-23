@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-MediumOblique.woff2') format('woff2'),
+        url('Involve-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Medium.woff2') format('woff2'),
+        url('Involve-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-BoldOblique.woff2') format('woff2'),
+        url('Involve-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-SemiBold.woff2') format('woff2'),
+        url('Involve-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Bold.woff2') format('woff2'),
+        url('Involve-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Oblique.woff2') format('woff2'),
+        url('Involve-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Regular.woff2') format('woff2'),
+        url('Involve-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Oblique.woff2') format('woff2'),
+        url('Involve-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Regular.woff2') format('woff2'),
+        url('Involve-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-SemiBoldOblique.woff2') format('woff2'),
+        url('Involve-SemiBoldOblique.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('Cygre-Medium.woff2') format('woff2'),
+        url('Cygre-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('Cygre-ExtraBold.woff2') format('woff2'),
+        url('Cygre-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('Cygre-Light.woff2') format('woff2'),
+        url('Cygre-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre Book';
+    src: url('Cygre-Book.woff2') format('woff2'),
+        url('Cygre-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('Cygre-Bold.woff2') format('woff2'),
+        url('Cygre-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('Cygre-SemiBold.woff2') format('woff2'),
+        url('Cygre-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('Cygre-RegularIt.woff2') format('woff2'),
+        url('Cygre-RegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('Cygre-Thin.woff2') format('woff2'),
+        url('Cygre-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('Cygre-Regular.woff2') format('woff2'),
+        url('Cygre-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

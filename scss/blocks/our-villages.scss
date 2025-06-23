@@ -1,0 +1,209 @@
+.our-villages {
+  background-color: $colorWhite;
+  position: relative;
+  overflow: hidden;
+
+  .section-title {
+    position: relative;
+    z-index: 3;
+  }
+
+  .our-villages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 67px;
+    margin-top: 30px;
+
+    @include responsive1549 {
+      gap: 40px;
+    }
+  }
+
+  .our-villages__item {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    &:nth-child(2n) {
+      .bgArrows {
+        left: auto;
+        right: -245px;
+        top: -250px;
+
+        @include responsive767 {
+          top: -50px;
+          left: auto;
+          right: -40px;
+        }
+      }
+    }
+  }
+
+  .our-villages__slider {
+    width: 100%;
+    position: relative;
+    border-radius: 60px;
+    overflow: hidden;
+    z-index: auto;
+
+    .swiper-wrapper {
+      z-index: auto;
+    }
+
+    @include responsive767 {
+      border-radius: 30px;
+    }
+
+    .swiper-slide {
+      position: relative;
+      width: 100%;
+      height: 790px;
+      border-radius: 60px;
+      overflow: hidden;
+      padding: 30px;
+
+      @include responsive1549 {
+        height: 600px;
+      }
+
+      @include responsive1199 {
+        height: 500px;
+        padding: 20px;
+      }
+
+      @include responsive767 {
+        border-radius: 30px;
+        padding: 11px;
+        height: auto;
+        padding-top: calc(428 / 355 * 100%);
+        min-height: 428px;
+      }
+    }
+
+    .picture-block {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include before {
+        width: 100%;
+        height: 100%;
+        background-color: $colorBlack-a2;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        pointer-events: none;
+      }
+    }
+
+    .swiper-controls {
+      position: absolute;
+      bottom: 35px;
+      right: 40px;
+      z-index: 4;
+
+      @include responsive1199 {
+        right: 30px;
+        bottom: 30px;
+      }
+
+      @include responsive767 {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        bottom: 10px;
+      }
+    }
+  }
+
+  .our-villages__content {
+    background-color: $colorWhite;
+    padding: 40px 30px 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+    border-radius: 50px;
+    width: 404px;
+
+    @include responsive1549 {
+      padding: 24px 30px;
+    }
+
+    @include responsive1549 {
+      width: 350px;
+    }
+
+    @include responsive767 {
+      left: 11px;
+      top: 11px;
+      width: calc(100% - 22px);
+      padding: 16px;
+      border-radius: 25px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .caption {
+      @include responsive767 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        br {
+          display: none;
+        }
+      }
+
+      @include responsive389 {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 44px;
+
+        @include responsive767 {
+          max-width: 30%;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 230px;
+
+      @include responsive1199 {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      @include responsive767 {
+        max-width: 170px;
+      }
+    }
+  }
+
+  .bgArrows {
+    position: absolute;
+    top: -80px;
+    left: -245px;
+    pointer-events: none;
+    z-index: -1;
+
+    @include responsive767 {
+      top: -50px;
+      left: -40px;
+    }
+  }
+}
