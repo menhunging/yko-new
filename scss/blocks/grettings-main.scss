@@ -45,11 +45,12 @@
 
     @include responsive767 {
       text-align: left;
+      padding-right: 0;
     }
 
     span {
       @include responsive767 {
-        width: 70%;
+        width: 218px;
         margin: 0;
       }
     }
@@ -81,7 +82,7 @@
     }
   }
 
-  .caption--small {
+  span.caption--small {
     text-transform: uppercase;
     display: block;
     margin-left: auto;
@@ -109,6 +110,8 @@
     @include responsive767 {
       font-size: 28px;
       line-height: 38px;
+      width: 100%;
+      padding-top: 0;
     }
 
     // @include responsive1549 {

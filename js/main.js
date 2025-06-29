@@ -88,6 +88,25 @@ $(document).ready(function () {
               nextEl: navNext && navNext,
               prevEl: navPrev && navPrev,
             },
+
+            on: {
+              init: function () {
+                const parent = this.el.parentElement;
+                if (this.activeIndex === 0) {
+                  parent.classList.add("firstSlide");
+                } else {
+                  parent.classList.remove("firstSlide");
+                }
+              },
+              slideChange: function () {
+                const parent = this.el.parentElement;
+                if (this.activeIndex === 0) {
+                  parent.classList.add("firstSlide");
+                } else {
+                  parent.classList.remove("firstSlide");
+                }
+              },
+            },
           });
         } else {
           return;
@@ -258,6 +277,27 @@ $(document).ready(function () {
       const isDisabled = btn.prop("disabled");
 
       btn.prop("disabled", !isDisabled);
+    });
+  }
+
+  if ($(".btnDetails").length > 0) {
+    $(".btnDetails").on("click", function (e) {
+      e.preventDefault();
+
+      const btn = $(this);
+      const parents = btn.parents(".our-villages__content");
+      const sibl = parents.siblings(".our-villages__info");
+      const isActive = btn.hasClass("active");
+
+      if (isActive) {
+        btn.text(btn.data("text")).removeClass("active");
+        parents.removeClass("active");
+        sibl.removeClass("opened");
+      } else {
+        btn.text(btn.data("active")).addClass("active");
+        sibl.addClass("opened");
+        parents.addClass("active");
+      }
     });
   }
 });

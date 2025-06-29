@@ -96,6 +96,7 @@ div {
   padding: 9px;
   border-radius: 20px;
   overflow: hidden;
+  transition: all 0.3s;
 
   @include responsive1549 {
     width: 80px;
@@ -446,9 +447,9 @@ section {
   left: 0;
   right: 0;
   margin: 0;
-  width: 45px;
-  height: 45px;
-  min-width: 45px;
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
   border-radius: 50%;
   transition: all 0.3s;
   background-size: 14px;
@@ -485,9 +486,9 @@ section {
   left: 0;
   right: 0;
   margin: 0;
-  width: 45px;
-  height: 45px;
-  min-width: 45px;
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
   border-radius: 50%;
   transition: all 0.3s;
   background-size: 14px;
@@ -695,7 +696,7 @@ section {
       opacity: 0;
 
       @include responsive1549 {
-        top: 3px;
+        top: 6px;
       }
     }
 

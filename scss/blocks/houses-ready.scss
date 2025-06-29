@@ -50,9 +50,9 @@
       img {
         display: inline-block;
         vertical-align: middle;
-        min-width: 44px;
+        min-width: 65px;
         height: auto;
-        width: 44px;
+        width: 65px;
 
         @include responsive639 {
           display: none;
@@ -318,8 +318,12 @@
 
   .swiper-controls {
     position: absolute;
-    top: -108px;
+    top: -113px;
     right: 0;
+
+    @include responsive1199 {
+      top: -93px;
+    }
 
     @include responsive767 {
       top: -70px;

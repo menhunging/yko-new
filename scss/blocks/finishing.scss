@@ -17,6 +17,10 @@
     left: 0;
     background-size: cover;
     pointer-events: none;
+
+    @include responsive1549 {
+      top: -201px;
+    }
   }
 
   .container {
