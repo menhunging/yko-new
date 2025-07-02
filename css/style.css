@@ -4374,6 +4374,11 @@ h4,
     height: 500px;
   }
 }
+@media (max-width: 767px) {
+  .houses .houses__video {
+    height: 350px;
+  }
+}
 .houses .houses__video video {
   position: absolute;
   top: 0;

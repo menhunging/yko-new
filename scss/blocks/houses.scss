@@ -45,6 +45,10 @@
       height: 500px;
     }
 
+    @include responsive767{
+      height: 350px;
+    }
+
     video {
       position: absolute;
       top: 0;
