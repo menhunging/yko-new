@@ -1,3 +1,5 @@
+// ВНИМАНИЕ. js не актульаный, на сервере более актуальный, так что доработки делаем частями. Целиком файл не переносим
+
 addEventListener("scroll", (event) => {
   let currentScroll = $(window).scrollTop();
 
@@ -298,6 +300,27 @@ $(document).ready(function () {
         sibl.addClass("opened");
         parents.addClass("active");
       }
+    });
+  }
+
+  if ($(".about-slider").length > 0) {
+    const swiper = new Swiper(".about-slider", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      navigation: {
+        prevEl: ".about-slider-wrapper .swiperBtnPrev",
+        nextEl: ".about-slider-wrapper .swiperBtnNext",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
     });
   }
 });
