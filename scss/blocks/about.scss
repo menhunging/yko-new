@@ -174,6 +174,12 @@
     @include responsive1549 {
       left: 0;
     }
+
+    @include responsive767 {
+      left: 50%;
+      top: calc(100% - 40px);
+      transform: translateX(-100%);
+    }
   }
 
   .swiperBtnNext {
@@ -186,6 +192,12 @@
 
     @include responsive1549 {
       right: 0;
+    }
+
+    @include responsive767 {
+      left: 50%;
+      top: calc(100% - 40px);
+      transform: translateX(20%);
     }
   }
 }
@@ -209,7 +221,7 @@
   }
 
   @include responsive767 {
-    width: 60%;
+    width: 100%;
     min-height: 380px;
     text-align: center;
   }
