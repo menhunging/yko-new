@@ -150,11 +150,11 @@
       padding-bottom: 20px;
 
       @include responsive1199 {
-        height: 440px;
+        height: 610px;
       }
 
       @include responsive767 {
-        height: 470px;
+        height: 630px;
       }
 
       .caption {
@@ -168,6 +168,26 @@
           top: 3px;
           right: -16px;
         }
+      }
+
+      p {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        opacity: 1;
+        pointer-events: initial;
+      }
+
+      .link-chat {
+        @include responsive1199 {
+          opacity: 1;
+          width: calc(100% - 32px);
+        }
+      }
+
+      .btnDetails {
+        background-color: #838383;
       }
     }
 
@@ -246,7 +266,11 @@
 
     p {
       @include responsive1199 {
+        opacity: 0;
+        pointer-events: none;
         display: none;
+        font-size: 14px;
+        line-height: 20px;
       }
     }
 
@@ -403,6 +427,35 @@
       }
     }
   }
+
+  .link-chat {
+    display: none;
+    bottom: 84px;
+    left: 16px;
+    z-index: 5;
+    width: calc(100% - 32px);
+    max-width: 100%;
+    text-align: center;
+
+    @include responsive1199 {
+      display: block;
+      width: 210px;
+      min-width: 210px;
+      padding: 4px 6px;
+      background-color: $colorBlack;
+      height: auto;
+      opacity: 0;
+      position: absolute;
+    }
+
+    .link-chat__text {
+      @include responsive1199 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
 }
 
 .firstSlide {
@@ -439,18 +492,18 @@
 
   @include responsive1199 {
     z-index: 5;
-    top: 76px;
+    top: 186px;
     bottom: auto;
     transform: initial;
     gap: 0;
-    width: calc(100% - 29px);
+    width: calc(100% - 32px);
     right: 2px;
     opacity: 0 !important;
     pointer-events: none !important;
   }
 
   @include responsive767 {
-    top: 106px;
+    top: 204px;
   }
 
   &.our-villages__info--one {

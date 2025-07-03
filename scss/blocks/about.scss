@@ -170,6 +170,7 @@
     left: -100px;
     right: auto;
     top: 50%;
+    z-index: 3;
 
     @include responsive1549 {
       left: 0;
@@ -189,6 +190,7 @@
     left: auto;
     right: -100px;
     top: 50%;
+    z-index: 3;
 
     @include responsive1549 {
       right: 0;

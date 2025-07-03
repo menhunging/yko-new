@@ -2043,7 +2043,7 @@ h4,
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  margin-top: -28px;
+  margin-top: 30px;
 }
 @media (max-width: 1549px) {
   .footer .footer-info {
@@ -2434,12 +2434,12 @@ h4,
 }
 @media (max-width: 1199px) {
   .our-villages .our-villages__content.active {
-    height: 440px;
+    height: 610px;
   }
 }
 @media (max-width: 767px) {
   .our-villages .our-villages__content.active {
-    height: 470px;
+    height: 630px;
   }
 }
 .our-villages .our-villages__content.active .caption {
@@ -2452,6 +2452,23 @@ h4,
   display: flex;
   top: 3px;
   right: -16px;
+}
+.our-villages .our-villages__content.active p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  opacity: 1;
+  pointer-events: initial;
+}
+@media (max-width: 1199px) {
+  .our-villages .our-villages__content.active .link-chat {
+    opacity: 1;
+    width: calc(100% - 32px);
+  }
+}
+.our-villages .our-villages__content.active .btnDetails {
+  background-color: #838383;
 }
 @media (max-width: 1549px) {
   .our-villages .our-villages__content {
@@ -2528,7 +2545,11 @@ h4,
 }
 @media (max-width: 1199px) {
   .our-villages .our-villages__content p {
+    opacity: 0;
+    pointer-events: none;
     display: none;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .our-villages .our-villages__content .btn {
@@ -2686,6 +2707,34 @@ h4,
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='185' height='31' viewBox='0 0 185 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M60.5832 29C60.5832 30.1046 59.6878 31 58.5832 31H2.00291C0.473257 31 -0.490169 29.3527 0.259761 28.0195L7.01344 16.0129C7.36571 15.3867 7.35496 14.6196 6.98527 14.0034L0.400612 3.02899C-0.399218 1.69594 0.561008 0 2.1156 0H58.5832C59.6878 0 60.5832 0.89543 60.5832 2V29Z' fill='%235F91FF'/%3e%3crect x='46' width='139' height='31' fill='%235F91FF'/%3e%3c/svg%3e ");
   }
 }
+.our-villages .link-chat {
+  display: none;
+  bottom: 84px;
+  left: 16px;
+  z-index: 5;
+  width: calc(100% - 32px);
+  max-width: 100%;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .our-villages .link-chat {
+    display: block;
+    width: 210px;
+    min-width: 210px;
+    padding: 4px 6px;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    opacity: 0;
+    position: absolute;
+  }
+}
+@media (max-width: 1199px) {
+  .our-villages .link-chat .link-chat__text {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 
 .firstSlide .our-villages__info,
 .firstSlide .importantText,
@@ -2720,11 +2769,11 @@ h4,
 @media (max-width: 1199px) {
   .our-villages__info {
     z-index: 5;
-    top: 76px;
+    top: 186px;
     bottom: auto;
     transform: initial;
     gap: 0;
-    width: calc(100% - 29px);
+    width: calc(100% - 32px);
     right: 2px;
     opacity: 0 !important;
     pointer-events: none !important;
@@ -2732,7 +2781,7 @@ h4,
 }
 @media (max-width: 767px) {
   .our-villages__info {
-    top: 106px;
+    top: 204px;
   }
 }
 .our-villages__info.our-villages__info--one li .icon {
@@ -3981,6 +4030,7 @@ h4,
   left: -100px;
   right: auto;
   top: 50%;
+  z-index: 3;
 }
 @media (max-width: 1549px) {
   .about-slider-wrapper .swiperBtnPrev {
@@ -4001,6 +4051,7 @@ h4,
   left: auto;
   right: -100px;
   top: 50%;
+  z-index: 3;
 }
 @media (max-width: 1549px) {
   .about-slider-wrapper .swiperBtnNext {
